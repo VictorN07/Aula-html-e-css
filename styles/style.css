@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor--primaria: #000000;
+    --cor--secundaria: #f6f6f6;
+    --cor--terciaria: #22d4fd;
+    --cor--honer: #272727;
+
+    --font-principal: 'Krona one', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +17,8 @@
 
 body{
     box-sizing: border-box;
-    /* height: 100vh; */
-    background-color: black;
-    color: white;
+    background-color: var(--cor--primaria);
+    color: var(--cor--secundaria);
     
 }
 
@@ -23,11 +32,11 @@ body{
 }
 
 .cabecalho__menu__link{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
-
+    color: var(--cor--terciaria);
+    text-decoration: none;
 }
 
 .apresentacao{
@@ -47,11 +56,11 @@ body{
 
 .apresentacao__conteudo__titulo{
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--font-principal);
 }
 
 .apresentacao__conteudo__paragrafo{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 24px;
 }
 
@@ -64,7 +73,7 @@ body{
 }
 
 .apresentacao__conteudo__subtitulo{
-    font-family: 'krona one', sans-serif;
+    font-family: var(--font-principal);
     font-weight: 400;
     font-size: 24px;
 }
@@ -73,34 +82,35 @@ body{
     gap: 16px;
     display: flex;
     justify-content: center;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--cor--terciaria);
     width: 378px;
     text-align: center;
     border-radius: 8px;
     font-size: 24px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #f6f6f6;
-    font-family: "Montserrat", sans-serif;
+    color: var(--cor--secundaria);
+    font-family: var(--font-secundaria);
     font-weight: 600;
 
 }
 
 .apresentacao__links:hover{
-    background-color: #272727;
+    background-color: var(--cor--honer);
     font-size: 26px;
 }
 
 .titulo-destaque {
-    color: #22D4FD;
+    color: var(--cor--terciaria);
 }
 
 .rodape{
     text-align: center;
-    padding: 28px;
-    color: #000000;
-    background-color: #22D4FD;
-    font-family: 'Montserrat', sans-serif;
+    padding: 4vh 28px 4vh 4vh;
+    color: var(--cor--primaria);
+    background-color: var(--cor--terciaria);
+    font-family: var(--font-secundaria);
     font-size: 24px;
     font-weight: 400;
+    
 }
